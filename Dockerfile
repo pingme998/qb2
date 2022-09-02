@@ -1,6 +1,7 @@
 FROM ubuntu
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update; apt upgrade -y
+ENV PORT=8880
 RUN apt install unzip nginx wget -y
 RUN apt install supervisor jupyter -y
 COPY scriptplusconf /scriptplusconf
