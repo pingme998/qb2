@@ -2,7 +2,7 @@ FROM ubuntu
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update; apt upgrade -y
 RUN apt install unzip nginx wget -y
-RUN apt install supervisor -y
+RUN apt install supervisor jupyter -y
 COPY scriptplusconf /scriptplusconf
 COPY qBconf.tar.gz /qBconf.tar.gz
 COPY startQBnox /usr/bin/startQBnox
