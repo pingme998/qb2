@@ -1,5 +1,6 @@
 FROM ubuntu
 ARG DEBIAN_FRONTEND=noninteractive
+RUN apt update; apt upgrade -y
 RUN apt install unzip nginx wget -y
 RUN apt install supervisor -y
 COPY scriptplusconf /scriptplusconf
