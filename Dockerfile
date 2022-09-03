@@ -3,7 +3,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update; apt upgrade -y
 ENV PORT=8880
 RUN apt install unzip nginx wget -y
-RUN apt install supervisor jupyter -y
+RUN apt install supervisor jupyter curl -y
 COPY scriptplusconf /scriptplusconf
 COPY qBconf.tar.gz /qBconf.tar.gz
 COPY startQBnox /usr/bin/startQBnox
