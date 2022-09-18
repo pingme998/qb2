@@ -13,7 +13,7 @@
       "value": "Enter your new password here"
     },
       "username": {
-      "description": "Torrent downloader website username (default username locked to developranaz for testing)",
+      "description": "Torrent downloader website username",
       "value": "Enter your new username here"
     }
 
